@@ -69,7 +69,7 @@ async fn main() {
         }
 
         match try_join_all(share_futures).await {
-            Ok(_) => println!("Added {} views", shares_to_add),
+            Ok(_) => println!("Added {} shares", shares_to_add),
             Err(e) => println!("error: {}", e),
         }
 
